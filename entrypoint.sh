@@ -33,7 +33,7 @@ echo ${Share_Path}
 
 if [ "$VER" = "latest" ]; then
   VER=`wget -qO- "https://api.github.com/repos/XTLS/Xray-core/releases/latest" | sed -n -r -e 's/.*"tag_name".+?"([vV0-9\.]+?)".*/\1/p'`
-  [[ -z "${VER}" ]] && VER="v1.2.2"
+  [[ -z "${VER}" ]] && VER="v1.6.1"
 else
   VER="v$VER"
 fi
